@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Woocommerce Mautic
-Version: 1.0.0
+Version: 1.1.0
 Plugin URI: https://github.com/dontbetriangle/Woocommerce-Mautic-Plugin/
 Description: Sends Woocommerce Customers details to a Mautic form
 Author: Richard Legg
@@ -75,10 +75,10 @@ return $newinput;
 
 
 
-// hook into woocommerce order status changed hook to handle the desired subscription event trigger
-add_action( 'woocommerce_order_status_changed','order_status_changed', 10, 3 );
+// hook into woocommerce update order because name etc is not available during checkout
+add_action( 'woocommerce_checkout_update_order_meta','order_status_changed', 10, 3 );
 
-
+//add_action( 'woocommerce_checkout_update_order_meta', 'order_status_changed' 1000, 1 );
 
 function order_status_changed( $id, $status = 'new', $new_status = 'pending' ) {
         
