@@ -2,6 +2,11 @@ This is a basic plugin that passes customers first name, last name and email add
 
 Please do jump in with a PR if you are able to improve something!
 
+<h2>Install</h2>
+The same way you would any other wordpress plugin. FTP/SSH to wp-content/plugins. More info on how to install plugins here: <a href="https://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation">https://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation</a>
+
+<h2>Set up</h2>
+
 1. Create a new Mautic form that will be used to submit woocommerce customers. 
 2. On the new form add the following fields: 
 	first_name - text field, Matching lead field = First Name
