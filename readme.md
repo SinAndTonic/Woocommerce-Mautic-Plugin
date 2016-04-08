@@ -1,3 +1,5 @@
+<h1>Woocommerce Mautic Plugin</h1>
+
 This is a basic plugin that passes customers first name, last name and email address to Mautic. It is a very rough implementation, which is the result of me (a Node developer) knowing very little about the WP platform or PHP. However, it does work (at least for me!).
 
 Please do jump in with a PR if you are able to improve something!
